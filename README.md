@@ -1,4 +1,4 @@
-# Blog Template
+# Blog. Template
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -6,6 +6,12 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 A beautiful, modern blog template built with pure HTML, CSS, and JavaScript. This template features a clean design with Libre Baskerville typography, smooth animations, and a fully responsive layout.
+
+## 🚀 Live Demo
+
+**[View Live Demo →](https://blog.gotrekiya.in)**
+
+Check out the live version of this template in action!
 
 ## Features
 
