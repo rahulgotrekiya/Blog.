@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A modern blogging platform for writers and readers.">
+    <title>My Stories — Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="navbar-brand">Blog.</a>
+
+            <ul class="navbar-nav">
+                <li><a href="create-post.html" class="nav-link">Write</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="avatar avatar-placeholder">J</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">Profile</a>
+                        <a href="dashboard.html" class="dropdown-item">My Stories</a>
+                        <a href="settings.html" class="dropdown-item">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" style="width:100%;text-align:left;border:none;background:none;cursor:pointer;font-family:var(--font-sans);font-size:14px;color:var(--medium-gray);">Sign out</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main>
+        <div class="container page-content">
+            <div class="dashboard-header">
+                <h1>My Stories</h1>
+                <a href="create-post.html" class="btn btn-dark">Create New Story</a>
+            </div>
+
+            <!-- Posts Table -->
+            <div class="card">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Published</th>
+                            <th>Likes</th>
+                            <th>Comments</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="post.html" class="table-title">The Art of Simplicity: Designing for Focus</a>
+                            </td>
+                            <td><span class="category-badge">Design</span></td>
+                            <td>Feb 16, 2026</td>
+                            <td>24</td>
+                            <td>12</td>
+                            <td>
+                                <div class="table-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-outline btn-danger">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="post.html" class="table-title">Getting Started with Modern JavaScript</a>
+                            </td>
+                            <td><span class="category-badge">Technology</span></td>
+                            <td>Feb 10, 2026</td>
+                            <td>38</td>
+                            <td>15</td>
+                            <td>
+                                <div class="table-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-outline btn-danger">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="post.html" class="table-title">The Future of Remote Work</a>
+                            </td>
+                            <td><span class="category-badge">Business</span></td>
+                            <td>Feb 5, 2026</td>
+                            <td>19</td>
+                            <td>7</td>
+                            <td>
+                                <div class="table-actions">
+                                    <button class="btn btn-sm btn-outline">Edit</button>
+                                    <button class="btn btn-sm btn-outline btn-danger">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-brand">Blog.</span>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
