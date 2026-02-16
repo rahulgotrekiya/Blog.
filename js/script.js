@@ -1,10 +1,7 @@
-import './bootstrap';
-
-import Alpine from 'alpinejs';
-
-window.Alpine = Alpine;
-
-Alpine.start();
+// import './bootstrap';
+// import Alpine from 'alpinejs';
+// window.Alpine = Alpine;
+// Alpine.start();
 
 // ========== TOAST NOTIFICATIONS ==========
 window.showToast = function(message, type = 'success') {
@@ -92,33 +89,67 @@ document.addEventListener('click', function(e) {
 });
 
 // ========== MOBILE MENU TOGGLE ==========
-document.addEventListener('DOMContentLoaded', function() {
+// ========== MOBILE MENU TOGGLE ==========
+// Run immediately as script is at end of body
+(function initMobileMenu() {
+    console.log('Mobile menu script initializing...');
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const navMenu = document.querySelector('.navbar-nav');
+    const body = document.body;
     
     if (menuToggle && navMenu) {
+        console.log('Mobile menu elements found, attacking listeners');
+        
         // Toggle menu on button click
         menuToggle.addEventListener('click', function(e) {
+            console.log('Hamburger clicked!');
+            e.preventDefault();
             e.stopPropagation();
+            
+            const isActive = this.classList.contains('active');
+            
             this.classList.toggle('active');
             navMenu.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open on mobile
+            if (!isActive && window.innerWidth <= 768) {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = '';
+            }
         });
         
         // Close menu when clicking nav links
         const navLinks = navMenu.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                menuToggle.classList.remove('active');
-                navMenu.classList.remove('active');
+            link.addEventListener('click', function(e) {
+                // Don't close if it's the dropdown toggle
+                if (!this.closest('.dropdown') || this.getAttribute('href') !== 'javascript:void(0)') {
+                    menuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    body.style.overflow = '';
+                }
             });
         });
         
         // Close menu when clicking outside
         document.addEventListener('click', function(e) {
-            if (!e.target.closest('.navbar-inner')) {
+            if (!e.target.closest('.navbar-inner') && navMenu.classList.contains('active')) {
                 menuToggle.classList.remove('active');
                 navMenu.classList.remove('active');
+                body.style.overflow = '';
             }
         });
+        
+        // Close menu on window resize if open
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                body.style.overflow = '';
+            }
+        });
+    } else {
+        console.error('Mobile menu elements NOT found!');
     }
-});
+})();
