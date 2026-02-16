@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A modern blogging platform for writers and readers."
+    />
+    <title>Blog — Where ideas find their voice</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">Blog.</a>
+
+        <ul class="navbar-nav">
+          <li><a href="pages/create-post.html" class="nav-link">Write</a></li>
+          <li class="dropdown">
+            <a
+              href="javascript:void(0)"
+              class="nav-link"
+              onclick="this.parentElement.classList.toggle('open')"
+            >
+              <span class="avatar avatar-placeholder">J</span>
+            </a>
+            <div class="dropdown-menu">
+              <a href="pages/profile.html" class="dropdown-item">Profile</a>
+              <a href="pages/dashboard.html" class="dropdown-item"
+                >My Stories</a
+              >
+              <a href="pages/settings.html" class="dropdown-item">Settings</a>
+              <div class="dropdown-divider"></div>
+              <button
+                class="dropdown-item"
+                style="
+                  width: 100%;
+                  text-align: left;
+                  border: none;
+                  background: none;
+                  cursor: pointer;
+                  font-family: var(--font-sans);
+                  font-size: 14px;
+                  color: var(--medium-gray);
+                "
+              >
+                Sign out
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main>
+      <!-- Featured Post Hero -->
+      <section class="hero-featured">
+        <div class="hero-featured-inner">
+          <div class="hero-featured-content">
+            <span class="hero-featured-label">Featured</span>
+            <h1>
+              <a href="pages/post.html"
+                >The Art of Simplicity: Designing for Focus</a
+              >
+            </h1>
+            <p class="hero-featured-excerpt">
+              Exploring how minimalist design principles can help create more
+              focused and impactful user experiences in modern web development.
+            </p>
+            <div class="hero-featured-meta">
+              <a
+                href="pages/profile.html"
+                class="author-name"
+                style="font-weight: 500; color: var(--off-black)"
+                >John Doe</a
+              >
+              <span
+                class="dot"
+                style="
+                  width: 3px;
+                  height: 3px;
+                  border-radius: 50%;
+                  background: var(--light-gray);
+                  display: inline-block;
+                "
+              ></span>
+              <span>Feb 16, 2026</span>
+              <span
+                class="dot"
+                style="
+                  width: 3px;
+                  height: 3px;
+                  border-radius: 50%;
+                  background: var(--light-gray);
+                  display: inline-block;
+                "
+              ></span>
+              <span>5 min read</span>
+            </div>
+          </div>
+          <img
+            src="images/sample-post-cover.png"
+            alt="The Art of Simplicity"
+            class="hero-featured-image"
+          />
+        </div>
+      </section>
+
+      <!-- Main Feed -->
+      <div class="layout-with-sidebar">
+        <div class="page-content">
+          <div class="feed-header">
+            <h2>Latest Stories</h2>
+          </div>
+
+          <div class="feed-grid">
+            <!-- Post Card 1 -->
+            <article class="post-card animate-fade-in-up stagger-1">
+              <div class="post-card-content">
+                <div class="post-card-meta">
+                  <a href="pages/profile.html" class="author-name"
+                    >Sarah Smith</a
+                  >
+                  <span class="dot"></span>
+                  <span>Feb 15</span>
+                </div>
+                <h3>
+                  <a href="pages/post.html"
+                    >Building Modern Web Apps with Progressive Enhancement</a
+                  >
+                </h3>
+                <p class="post-card-excerpt">
+                  Learn how to create robust web applications that work for
+                  everyone, regardless of their device or connection speed.
+                </p>
+                <div class="post-card-footer">
+                  <a href="#" class="post-card-category">Technology</a>
+                  <span>8 min read</span>
+                  <span>·</span>
+                  <span>42 likes</span>
+                </div>
+              </div>
+              <img
+                src="images/sample-post-cover.png"
+                alt="Building Modern Web Apps"
+                class="post-card-thumbnail"
+              />
+            </article>
+
+            <!-- Post Card 2 -->
+            <article class="post-card animate-fade-in-up stagger-2">
+              <div class="post-card-content">
+                <div class="post-card-meta">
+                  <a href="pages/profile.html" class="author-name"
+                    >Mike Johnson</a
+                  >
+                  <span class="dot"></span>
+                  <span>Feb 14</span>
+                </div>
+                <h3>
+                  <a href="pages/post.html">Why Remote Work is Here to Stay</a>
+                </h3>
+                <p class="post-card-excerpt">
+                  An analysis of the lasting impact of remote work on businesses
+                  and employees, and what it means for the future.
+                </p>
+                <div class="post-card-footer">
+                  <a href="#" class="post-card-category">Business</a>
+                  <span>6 min read</span>
+                  <span>·</span>
+                  <span>18 likes</span>
+                </div>
+              </div>
+              <div class="post-card-thumbnail-placeholder"></div>
+            </article>
+
+            <!-- Post Card 3 -->
+            <article class="post-card animate-fade-in-up stagger-3">
+              <div class="post-card-content">
+                <div class="post-card-meta">
+                  <a href="pages/profile.html" class="author-name"
+                    >Emma Davis</a
+                  >
+                  <span class="dot"></span>
+                  <span>Feb 13</span>
+                </div>
+                <h3>
+                  <a href="pages/post.html"
+                    >The Power of Typography in Digital Design</a
+                  >
+                </h3>
+                <p class="post-card-excerpt">
+                  Understanding how typography choices can dramatically impact
+                  user experience and brand perception.
+                </p>
+                <div class="post-card-footer">
+                  <a href="#" class="post-card-category">Design</a>
+                  <span>7 min read</span>
+                  <span>·</span>
+                  <span>31 likes</span>
+                </div>
+              </div>
+              <img
+                src="images/sample-post-cover.png"
+                alt="The Power of Typography"
+                class="post-card-thumbnail"
+              />
+            </article>
+
+            <!-- Post Card 4 -->
+            <article class="post-card animate-fade-in-up stagger-4">
+              <div class="post-card-content">
+                <div class="post-card-meta">
+                  <a href="pages/profile.html" class="author-name">Alex Chen</a>
+                  <span class="dot"></span>
+                  <span>Feb 12</span>
+                </div>
+                <h3>
+                  <a href="pages/post.html"
+                    >Getting Started with Modern JavaScript</a
+                  >
+                </h3>
+                <p class="post-card-excerpt">
+                  A comprehensive guide to ES6+ features and modern JavaScript
+                  development practices.
+                </p>
+                <div class="post-card-footer">
+                  <a href="#" class="post-card-category">Technology</a>
+                  <span>10 min read</span>
+                  <span>·</span>
+                  <span>55 likes</span>
+                </div>
+              </div>
+              <div class="post-card-thumbnail-placeholder"></div>
+            </article>
+
+            <!-- Post Card 5 -->
+            <article class="post-card animate-fade-in-up stagger-5">
+              <div class="post-card-content">
+                <div class="post-card-meta">
+                  <a href="pages/profile.html" class="author-name"
+                    >Lisa Anderson</a
+                  >
+                  <span class="dot"></span>
+                  <span>Feb 11</span>
+                </div>
+                <h3>
+                  <a href="pages/post.html"
+                    >Building a Sustainable Business Model</a
+                  >
+                </h3>
+                <p class="post-card-excerpt">
+                  Key strategies for creating a business that's built to last in
+                  today's rapidly changing economy.
+                </p>
+                <div class="post-card-footer">
+                  <a href="#" class="post-card-category">Business</a>
+                  <span>9 min read</span>
+                  <span>·</span>
+                  <span>27 likes</span>
+                </div>
+              </div>
+              <img
+                src="images/sample-post-cover.png"
+                alt="Building a Sustainable Business"
+                class="post-card-thumbnail"
+              />
+            </article>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-section">
+            <h4>Discover Topics</h4>
+            <a href="#" class="sidebar-tag">Technology</a>
+            <a href="#" class="sidebar-tag">Design</a>
+            <a href="#" class="sidebar-tag">Business</a>
+            <a href="#" class="sidebar-tag">Lifestyle</a>
+            <a href="#" class="sidebar-tag">Health</a>
+            <a href="#" class="sidebar-tag">Science</a>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-brand">Blog.</span>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
