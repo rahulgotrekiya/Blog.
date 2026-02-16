@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A modern blogging platform for writers and readers.">
+    <title>John Doe — Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="navbar-brand">Blog.</a>
+
+            <ul class="navbar-nav">
+                <li><a href="create-post.html" class="nav-link">Write</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link" onclick="this.parentElement.classList.toggle('open')">
+                        <span class="avatar avatar-placeholder">J</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">Profile</a>
+                        <a href="dashboard.html" class="dropdown-item">My Stories</a>
+                        <a href="settings.html" class="dropdown-item">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" style="width:100%;text-align:left;border:none;background:none;cursor:pointer;font-family:var(--font-sans);font-size:14px;color:var(--medium-gray);">Sign out</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main>
+        <div class="container page-content">
+            <!-- Profile Header -->
+            <div class="profile-header animate-fade-in-up">
+                <div class="profile-header-inner">
+                    <span class="avatar avatar-lg avatar-placeholder">J</span>
+                    <div class="profile-info">
+                        <h1>John Doe</h1>
+                        <p class="profile-username">@johndoe</p>
+                        <p class="profile-bio">Full-stack developer passionate about creating beautiful, functional web experiences.</p>
+                        <div class="profile-stats">
+                            <span><strong>12</strong> stories</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User's Posts -->
+            <div style="margin-top:32px;">
+                <div class="feed-header">
+                    <h2>Stories by John Doe</h2>
+                </div>
+
+                <div class="feed-grid">
+                    <!-- Post Card 1 -->
+                    <article class="post-card animate-fade-in-up stagger-1">
+                        <div class="post-card-content">
+                            <div class="post-card-meta">
+                                <span>Feb 16, 2026</span>
+                            </div>
+                            <h3><a href="post.html">The Art of Simplicity: Designing for Focus</a></h3>
+                            <p class="post-card-excerpt">Exploring how minimalist design principles can help create more focused and impactful user experiences.</p>
+                            <div class="post-card-footer">
+                                <a href="#" class="post-card-category">Design</a>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                        <img src="../images/sample-post-cover.png" alt="The Art of Simplicity" class="post-card-thumbnail">
+                    </article>
+
+                    <!-- Post Card 2 -->
+                    <article class="post-card animate-fade-in-up stagger-2">
+                        <div class="post-card-content">
+                            <div class="post-card-meta">
+                                <span>Feb 10, 2026</span>
+                            </div>
+                            <h3><a href="post.html">Getting Started with Modern JavaScript</a></h3>
+                            <p class="post-card-excerpt">A comprehensive guide to ES6+ features and modern JavaScript development practices.</p>
+                            <div class="post-card-footer">
+                                <a href="#" class="post-card-category">Technology</a>
+                                <span>10 min read</span>
+                            </div>
+                        </div>
+                        <div class="post-card-thumbnail-placeholder"></div>
+                    </article>
+
+                    <!-- Post Card 3 -->
+                    <article class="post-card animate-fade-in-up stagger-3">
+                        <div class="post-card-content">
+                            <div class="post-card-meta">
+                                <span>Feb 5, 2026</span>
+                            </div>
+                            <h3><a href="post.html">The Future of Remote Work</a></h3>
+                            <p class="post-card-excerpt">An analysis of the lasting impact of remote work on businesses and employees.</p>
+                            <div class="post-card-footer">
+                                <a href="#" class="post-card-category">Business</a>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                        <img src="../images/sample-post-cover.png" alt="The Future of Remote Work" class="post-card-thumbnail">
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-brand">Blog.</span>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
