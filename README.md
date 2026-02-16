@@ -1,5 +1,10 @@
 # Blog Template
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 A beautiful, modern blog template built with pure HTML, CSS, and JavaScript. This template features a clean design with Libre Baskerville typography, smooth animations, and a fully responsive layout.
 
 ## Features
